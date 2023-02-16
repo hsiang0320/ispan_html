@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的使用--自訂樣式(class)</title>
+    <style>
+        @font-face {
+            font-family: font1;
+            src: url(fonts/JustOldFashion.ttf);
+        }
+
+        .font1 {
+            font-family: font1;
+        }
+
+        @font-face {
+            font-family: font2;
+            src: url(fonts/SCRIPTIN.ttf);
+        }
+
+        .font2 {
+            font-family: font2;
+        }
+
+        .st1 {
+            color: orange;
+            font-style: italic;
+        }
+
+        h2.st2 {
+            /* 限定h2能用 */
+            color: pink;
+            text-transform: capitalize;
+            /* 首字母大寫 */
+        }
+
+        .col2 {
+            color: brown;
+        }
+
+        .col1 {
+            color: gray;
+        }
+
+        .col3 {
+            color: green;
+        }
+
+        .size1 {
+            font-size: 3em;
+        }
+
+        .trans1 {
+            text-transform: uppercase;
+            /* 全字母大寫 */
+        }
+
+        .sty1 {
+            font-style: italic;
+            /* 斜體 */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="font1 col1 trans1">apple</h1>
+    <h2 class="font2 col2 size1">orange</h2>
+    <h2 class="st1">banana</h2>
+    <h3 class="st2">aaa</h3>
+    <h3 class="col1 size1 trans1">panda</h3>
+    <!-- 一個標籤有多個類別選取器 中間用半形空格隔開 -->
+    <h4 class="col2 size1 sty1">monkey</h4>
+    <h3 class="col2 col3 col1 size1">12345</h3>
+    <!-- 顏色順序brown->gray->green 所以最後顯示為綠色 -->
+    <!-- 與標籤後面的class順序無關 -->
+</body>
+
+</html>

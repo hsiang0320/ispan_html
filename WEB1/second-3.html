@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #theH1 {
+            color: red;
+        }
+
+        .colh2 {
+            color: green;
+        }
+
+        #theH2 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="theH1">apple</h1>
+    <!-- 1個id只套用一次 -->
+    <h2 id="theH1">apple</h2>
+    <h2 style="color: gray;" id="#theH2" class="colh2">apple</h2>
+    <!-- 直接寫入>id>class -->
+    <script>
+        document.getElementById("theH1").style.color = "blue";
+    </script>
+</body>
+
+</html>

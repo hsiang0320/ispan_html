@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        .tb1 {
+            border: 3px solid blue;
+            width: 400px;
+            border-collapse: collapse;
+            /* 移除td跟tb之間的間距 */
+        }
+
+        td,
+        th {
+            border: 1px solid gray;
+        }
+
+        thead {
+            background-color: #005AB5;
+            color: white;
+            text-transform: capitalize;
+        }
+
+        tbody {
+            background-color: #46a3ff;
+            text-align: center;
+
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: #97cbff;
+            /* 偶數列改顏色 */
+        }
+
+        tbody tr:nth-child(2n+1) {
+            background-color: #66b3ff;
+            /* 奇數列改顏色 */
+        }
+
+        /* tbody tr:nth-child(3n) {
+            background-color:black;
+            /* 3n->3,6,9,12....} */
+        tbody td:hover {
+            background-color: aqua;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>div文字垂直對齊</h2>
+    <div style="width: 100px; height: 100px; border: 1px solid red; line-height: 100px;">
+        <!-- div高度跟line-height一樣 做垂直對齊 -->
+        高度有指定
+        <!-- <p style="margin: 0px;">高度有指定</p> -->
+        <!-- 放在<p>裡會因為p本身的margin導致無法置中，要將<p>的margin設為0 -->
+        <!-- div高度為指定100px -->
+    </div>
+    <hr>
+    <div style="width: 100px; border: 1px solid green; padding-top: 50px; padding-bottom: 50px;">
+        高度不指定
+        <!-- div高度為50+50+文字高度 -->
+    </div>
+    <hr>
+    <table class="tb1">
+        <caption>
+            <h2>表格練習</h2>
+        </caption>
+        <thead>
+            <tr>
+                <th>column1</th>
+                <th>column2</th>
+                <th>column3</th>
+                <th>column4</th>
+            </tr>
+            <tr>
+                <th colspan="2">column1</th>
+                <!-- <th>column2</th> -->
+                <!-- 合併儲存格 -->
+                <th colspan="2">column3</th>
+                <!-- <th>column4</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="3">3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <!-- <td>3</td> -->
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td colspan="3">2</td>
+                <!-- 合併儲存格 -->
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

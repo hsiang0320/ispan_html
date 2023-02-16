@@ -1,0 +1,42 @@
+.st1 {
+    color: orange;
+    font-style: italic;
+}
+
+h2.st2 {
+    /* 限定h2能用 */
+    color: pink;
+    text-transform: capitalize;
+    /* 首字母大寫 */
+}
+
+.col2 {
+    color: brown;
+}
+
+.col1 {
+    color: gray;
+}
+
+.col3 {
+    color: green;
+}
+
+.size1 {
+    font-size: 3em;
+}
+
+.trans1 {
+    text-transform: uppercase;
+    /* 全字母大寫 */
+}
+
+.sty1 {
+    font-style: italic;
+    /* 斜體 */
+}
+p{
+color: gray;
+font-size: 5em;
+text-decoration: underline;
+}

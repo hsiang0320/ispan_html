@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清單元素</title>
+    <link rel="stylesheet" href="../styles/list.css">
+    <style>
+        /* .list1 {
+            list-style-type: circle;
+        }
+
+        .list2 {
+            list-style-type: none;
+            list-style-image: url(../images/1234.jpg);
+        }
+        .in{
+            background-color: orange;
+            list-style-position: inside;
+        }
+        .out{
+            background-color: orange;
+            list-style-position: outside;
+        } */
+    </style>
+</head>
+<a href="https://www.google.com/">Google</a>
+<br>
+<a href="../first.html">first</a>
+<!-- 回到上一層用../ -->
+<!-- 本機內超連結用相對路徑 -->
+<br>
+<a href="../hyperlink.html">hyperlink</a>
+
+<body>
+    <h2>台灣藍鵲</h2>
+
+    <dl style="background-color: aquamarine;">
+        <dt>學名---dt</dt>
+        <dd>Urocissa caerulea---dd</dd>
+        <dt>俗名</dt>
+        <dd>又稱--dd<ul>--ul
+                <li>臺灣暗藍鵲--li</li>
+                <li>紅嘴山鵲--li</li>
+                <li>長尾山娘--li</li>
+                --ul
+            </ul>
+            --dd
+        </dd>
+        <dt>分類</dt>
+        <dd>雀形目</dd>
+        <dd>鴉科</dd>
+        <dd>藍鵲屬</dd>
+        <dt>分布</dt>
+        <dd>中、低海拔闊葉林</dd>
+    </dl>
+    <h2 style="background-color:green;">新聞 </h2>
+    <ul class="list1">
+        <li style="background-color: orange;">11</li>
+        <li >22 <ol>
+                <li class="in">22-1</li>
+                <li class="out">22-2</li>
+                <li>22-3</li>
+            </ol>
+        </li>
+        <li>33</li>
+        <li>44</li>
+        <li>55</li>
+    </ul>
+
+    <h3>123</h3>
+    <ol class="list2" style="background-color: yellow;">
+        <li style="background-color: orange;">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li></li>
+    </ol>
+
+</body>
+
+</html>
